@@ -1,6 +1,7 @@
 import '@/styles/globals.css'
 import {cn} from '@/lib/utils'
 import {Inter} from 'next/font/google'
+import Navbar from '@/components/Navbar'
 
 
 export const metadata = {
@@ -22,7 +23,7 @@ export default function RootLayout({
       inter.className
     )}>
       <body className='min-h-screen pt-2 bg-slate-50 antialiased'>
-        {/* <Navbar/> */}
+         <Navbar/>
         <div className='container' max-w-7xl max-auto h-full pt-12>
         {children}
         </div>
